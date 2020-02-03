@@ -9,8 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import KnotImage from "../images/knot.jpg";
+
 import Header from "./header"
-import "./layout.css"
+import "./layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,6 +27,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <img src={KnotImage} alt="KnotImage" className="knot_image"/>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -36,9 +39,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © {new Date().getFullYear()}, By Chhetri Parivar
         </footer>
       </div>
     </>
