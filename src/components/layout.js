@@ -10,10 +10,13 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import KnotImage from "../images/knot.jpg";
+import KnotImageSm from "../images/knot_sm.jpg";
 
 import Header from "./header"
 import "./layout.scss"
 
+console.log(KnotImage, "image")
+console.log(KnotImageSm, "image sm")
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -27,7 +30,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <img src={KnotImage} alt="KnotImage" className="knot_image"/>
+      <img
+        src={KnotImageSm}
+        srcSet={`${KnotImageSm} 768w,
+           ${KnotImage} 3000w`}
+      alt="KnotImage" 
+      className="knot_image"/>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{

@@ -12,30 +12,25 @@ const Header = ({ siteTitle }) => (
     }}
   >
     <div
-      style={{
-        margin: `0 auto`,
-        padding: `0.85rem 1.0875rem`,
-        display: 'flex',
-        justifyContent: `flex-end`
-      }}
+      className="top_nav_container"
     >
-      <h5 style={{ margin: "0 2rem" }}>
-        <Link
-          to="/"
+      <h5>
+        <a
+          href="/"
           className="link_class"
           >
           Home
-        </Link>
+        </a>
       </h5>
-      <h5 style={{ margin: "0 2rem" }}>
-        <Link
-          to="/"
-          className="link_class"
-          >
-          About
-        </Link>
+      <h5>
+      <a
+        href="#about"
+        className="link_class"
+        >
+        About
+      </a>
       </h5>
-      <h5 style={{ margin: "0 2rem" }}>
+      <h5>
         <Link
           to="/"
           className="link_class"
@@ -43,7 +38,7 @@ const Header = ({ siteTitle }) => (
           Groom & Bride
         </Link>
       </h5>
-      <h5 style={{ margin: "0 2rem" }}>
+      <h5>
         <Link
           to="/"
           className="link_class"

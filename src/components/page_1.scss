@@ -1,12 +1,13 @@
 main {
-  display: flex;
-    justify-content: center;
+  // display: flex;
+  justify-content: center;
 }
 .main_header{
   text-align: center;
   color: #fff;
-  position: absolute;
-   margin-top: 5rem;
+  // position: absolute;
+  margin-top: 5rem;
+  
 
   .prefix {
     text-transform: uppercase;
@@ -18,8 +19,8 @@ main {
   .prefix::before {
    content: '';
     position: absolute;
-    top: 5%;
-    left: 22%;
+    top: 5px;
+    left: -9rem;
     border-top: 2.5px solid #e8e8e8;
     width: 7rem;
     height: 2px;
@@ -28,8 +29,8 @@ main {
   .prefix::after {
    content: '';
     position: absolute;
-    top: 5%;
-    right: 22%;
+    top:  5px;
+    right: -9rem;
     border-top: 2.5px solid #e8e8e8;
     width: 7rem;
     height: 2px;
@@ -38,6 +39,35 @@ main {
 
   .name_header {
     margin-top: 2rem;
-    font-size: 7rem;;
+    font-size: 5rem !important;
+    word-spacing: 2rem;
+  }
+  .prefix_container {
+    position: relative;
+    left: 50%;
+    clear: both;
+    .prefix {
+      position: relative;
+      left: -50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main_header {
+    .prefix::before {
+      display: none;
+      // top: 18vh !important;
+      // left: 20%  !important;
+    }
+    .prefix::after {
+      display: none;
+      // top: 18vh  !important;
+      // right: 22%  !important;
+    }
+  }
+  .name_header {
+    word-spacing: 5rem !important;
+    line-height: 6.5rem;
   }
 }

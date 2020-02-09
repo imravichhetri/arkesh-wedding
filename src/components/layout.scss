@@ -223,7 +223,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
 }
 h1 {
   margin-left: 0;
@@ -624,6 +624,25 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+  .cursive_text {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main_header .name_header {
+    font-size: 7rem !important;
+  }
+  .countdown_container .time_span {
+    font-size: 30px !important;
+  }
+  .countdown_container{
+    position: absolute;
+    left: 0rem;
+    bottom: 2rem;
+    /* justify-content: center; */
+    width: 100%;
+  }
 }
 .cursive_text {
   font-family: "Great Vibes", cursive;
@@ -641,5 +660,19 @@ img.knot_image{
   position: absolute;
   width: 100%;
   z-index: -1;
-  height: 100vh;
+  height: 100%;
+}
+
+.col_flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex_display  {
+  display: flex;
+}
+
+main {
+  scroll-behavior: smooth;
+
 }

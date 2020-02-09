@@ -1,8 +1,42 @@
-.link_class {
-  color: #fdf4eb;
-  text-decoration: none;
 
-  &:hover {
-    color: #ff7940;
+.top_nav_container {
+  margin: 0 auto;
+  padding: 0.85rem 1.0875rem;
+  display: flex;
+  justify-content: flex-end;
+
+  h5 {
+    margin: 0 2rem;
+
+    .link_class {
+      color: #fdf4eb;
+      text-decoration: none;
+
+      &:hover {
+        color: #ff7940;
+      }
+    }
   }
+}
+
+@media only screen and (max-width: 640px) {
+  .top_nav_container {
+    margin: 0 auto;
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    justify-content: center;
+
+  h5 {
+    margin: 0 0.5rem;
+    
+    .link_class {
+      color: #fdf4eb;
+      text-decoration: none;
+
+      &:hover {
+        color: #ff7940;
+      }
+    }
+  }
+}
 }

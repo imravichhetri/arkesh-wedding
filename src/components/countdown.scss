@@ -1,0 +1,19 @@
+.countdown_container {
+  margin-top: 7rem;
+  .time_span{
+    width: 25%;
+    font-size: 40px;
+    font-weight: 500;
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    color: #fff;
+    margin-bottom: 0;
+  
+    span {
+      font-size: 12px;
+      display: block;
+      color: #fff;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+}
