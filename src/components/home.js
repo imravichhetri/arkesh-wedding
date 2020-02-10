@@ -21,9 +21,9 @@ const Home = props => {
       <div
         className="main_header"
         >
-        <div className="prefix_container">
+        <span className="prefix_container">
           <span className="prefix">The Wedding of</span>
-        </div>
+        </span>
         <h2 className="cursive_text name_header">Aradhana & Mukesh</h2>
         <Countdown />
         {/* <p>Please do come and no mixer-juicer wala gift.</p> */}

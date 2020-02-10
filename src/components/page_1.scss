@@ -1,12 +1,10 @@
-main {
-  // display: flex;
-  justify-content: center;
-}
+
 .main_header{
   text-align: center;
   color: #fff;
   // position: absolute;
   margin-top: 5rem;
+  height: 100%;
   
 
   .prefix {
@@ -64,6 +62,12 @@ main {
       display: none;
       // top: 18vh  !important;
       // right: 22%  !important;
+    }
+    .prefix_container {
+      position: static;
+      .prefix {
+        position: static;
+      }
     }
   }
   .name_header {
