@@ -39,12 +39,12 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h5>
       <h5>
-        <Link
-          to="/"
+        <a
+          href="#whenAndWhere"
           className="link_class"
         >
           When & Where
-        </Link>
+        </a>
       </h5>
     </div>
   </header>

@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import Home from "../components/home"
 import SEO from "../components/seo"
 import About from "../components/about"
+import WhenAndWhere from "../components/when_and_where"
 // import "../components/functions";
 const IndexPage = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const IndexPage = () => {
       style={{ fontFamily: 'scriptina'}}>Arie weds Mickey</h1> */}
     <Home/>
     <About/>
+    <WhenAndWhere/>
   </Layout>
 )
     }

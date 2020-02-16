@@ -1,0 +1,42 @@
+.card_container{
+  text-align: center;
+  margin: 2rem 1rem;
+  padding: 2rem  0;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  &:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  &>h3{
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 400;
+  }
+  &>p {
+    color: #999999;
+  }
+  &>p:nth-of-type(3){
+    font-weight: 500;
+  }
+  &>span{
+    padding: 2px 5px;
+    border: 1px solid #d9d9d9;
+    &>a {
+      color: #f67d7d;
+      font-size: 12px;
+      text-decoration: none;
+    }
+  }
+}
+// .card {
+//   /* Add shadows to create the "card" effect */
+//   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+//   transition: 0.3s;
+// }
+
+// /* On mouse-over, add a deeper shadow */
+// .card:hover {
+//   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+// }

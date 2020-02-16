@@ -1,0 +1,15 @@
+#whenAndWhere {
+  .when_and_where_content_container{
+    display: flex;
+
+    &>div{
+      flex:1
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .when_and_where_content_container {
+    flex-direction: column;
+  }
+}

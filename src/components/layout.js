@@ -15,8 +15,6 @@ import KnotImageSm from "../images/knot_sm.jpg";
 import Header from "./header"
 import "./layout.scss"
 
-console.log(KnotImage, "image")
-console.log(KnotImageSm, "image sm")
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
