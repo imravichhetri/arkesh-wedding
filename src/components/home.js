@@ -19,7 +19,14 @@ const Home = props => {
         className="knot_image" 
         /> */}
       <div
-        className="main_header"
+        className="main_header container"
+        // style={{
+        //   margin: `0 auto`,
+        //   maxWidth: 960,
+        //   padding: `0px 1.0875rem 1.45rem`,
+        //   paddingTop: 0,
+        //   height: "100%"
+        // }}
         >
         <span className="prefix_container">
           <span className="prefix">The Wedding of</span>
