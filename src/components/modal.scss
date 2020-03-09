@@ -1,0 +1,32 @@
+
+// .modal_content_container {
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//   opacity:0.5;
+  
+// }
+.modal_content_container {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  background-color: #0a0a0ae0;
+  height: 50%;
+  border-radius: 5px;
+  z-index: 999;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Arya';
+  overflow-y: scroll;
+}
+@media only screen and (max-width: 640px) {
+  .modal_content_container {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 75%;
+    height: 75%;
+  }
+}

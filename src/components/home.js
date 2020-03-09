@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 import Countdown from "../components/countdown";
 
-import KnotImage from "../images/knot.jpg";
-import KnotImageSm from "../images/knot_sm.jpg";
+// import KnotImage from "../images/knot.jpg";
+// import KnotImageSm from "../images/knot_sm.jpg";
 
 import "../components/page_1.scss";
 

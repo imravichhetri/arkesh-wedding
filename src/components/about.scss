@@ -52,6 +52,12 @@
 @media only screen and (max-width: 640px) {
   #about {
     flex-direction: column;
+    &::before {
+    width: 96%;
+  }
+  &::after {
+    width: 96%;
+  }
   }
   .time {
     line-height: 3rem;

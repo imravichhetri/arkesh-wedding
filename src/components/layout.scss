@@ -15,6 +15,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #999999;
 }
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 article,
 aside,
 details,
@@ -631,21 +639,7 @@ pre tt:after {
   }
 }
 
-@media only screen and (max-width: 640px) {
-  .main_header .name_header {
-    font-size: 7rem !important;
-  }
-  .countdown_container .time_span {
-    font-size: 30px !important;
-  }
-  .countdown_container{
-    position: absolute;
-    left: 0rem;
-    bottom: 2rem;
-    /* justify-content: center; */
-    width: 100%;
-  }
-}
+
 .cursive_text {
   font-family: "Great Vibes", cursive;
   color: #fff;;
@@ -654,10 +648,29 @@ footer {
   position: absolute;
   bottom: 0;
   text-align: center;
+  width: 90%;
+  color: white;
+  font-family: fantasy;
+}
+@media print {
+  html, body {
+      display: none;  /* hide whole page */
+  }
 }
 
+img.message_icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
 
-
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+}
 img.knot_image{
   position: absolute;
   width: 100%;
@@ -710,5 +723,23 @@ main {
   }
   .red_text{
     color: #f67e7d;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .main_header .name_header {
+    font-size: 7rem !important;
+  }
+  .countdown_container .time_span {
+    font-size: 30px !important;
+  }
+  .countdown_container{
+    position: absolute;
+    left: 0rem;
+    bottom: 2rem;
+    /* justify-content: center; */
+    width: 100%;
+  }
+  img.message_icon {
+    bottom: 5rem;
   }
 }

@@ -8,6 +8,7 @@ import Home from "../components/home"
 import SEO from "../components/seo"
 import About from "../components/about"
 import WhenAndWhere from "../components/when_and_where"
+import Gallery from "../components/gallery"
 // import "../components/functions";
 const IndexPage = () => {
   useEffect(() => {
@@ -29,6 +30,7 @@ const IndexPage = () => {
     <Home/>
     <About/>
     <WhenAndWhere/>
+    <Gallery/>
   </Layout>
 )
     }

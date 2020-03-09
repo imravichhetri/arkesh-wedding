@@ -31,14 +31,6 @@ const Header = ({ siteTitle }) => (
       </a>
       </h5>
       <h5>
-        <Link
-          to="/"
-          className="link_class"
-        >
-          Groom & Bride
-        </Link>
-      </h5>
-      <h5>
         <a
           href="#whenAndWhere"
           className="link_class"
@@ -46,6 +38,15 @@ const Header = ({ siteTitle }) => (
           When & Where
         </a>
       </h5>
+      <h5>
+        <a
+          href="#gallery"
+          className="link_class"
+          >
+          Gallery
+        </a>
+      </h5>
+     
     </div>
   </header>
 )
