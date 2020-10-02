@@ -1,5 +1,6 @@
 import React, {
-  useEffect
+  useEffect,
+  useState
 } from "react"
 import { Link } from "gatsby"
 
@@ -9,8 +10,13 @@ import SEO from "../components/seo"
 import About from "../components/about"
 import WhenAndWhere from "../components/when_and_where"
 import Gallery from "../components/gallery"
+import Modal from "../components/modal"
 // import "../components/functions";
+
+import "../components/index.scss";
+
 const IndexPage = () => {
+  const [showModal, setShowModal] = useState(false)
   useEffect(() => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -22,9 +28,11 @@ const IndexPage = () => {
       });
     })
   }, [])
+  
   return (
   <Layout>
     <SEO title="Home" />
+    
     {/* <h1
       style={{ fontFamily: 'scriptina'}}>Arie weds Mickey</h1> */}
     <Home/>

@@ -7,7 +7,7 @@ import "./countdown.scss";
 
 function makeTimer() {
 
-  let endTime = new Date("04 May 2020 20:00:00 GMT+05:30");
+  let endTime = new Date("25 October 2020 19:30:00 GMT+05:30");
   endTime = (Date.parse(endTime) / 1000);
 
   let now = new Date();

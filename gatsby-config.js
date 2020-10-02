@@ -1,6 +1,10 @@
 module.exports = {
+  developMiddleware: app => {
+    console.log(app,app.request, "app-----")
+    
+  },
   siteMetadata: {
-    title: `May 4th, 2019`,
+    title: `October 25th, 2020`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     whenAndWhere: {
@@ -8,8 +12,8 @@ module.exports = {
         {
           occasion: "Mehendi",
           when: {
-            date: "Sunday, 3rd May, 2020",
-            time: "07:00 pm-11:00 pm",
+            date: "Friday, 23rd October, 2020",
+            time: "04:00 PM-08:00 PM",
           },
           where: {
             location: "Chhetri Nivas, Raj Vihar Colony, Roorkee, Uttarakhand",
@@ -19,8 +23,8 @@ module.exports = {
         {
           occasion: "Haldi Haath",
           when: {
-            date: "Monday, 4th May, 2020",
-            time: "10:00 am-01:00 pm",
+            date: "Sunday, 25th October, 2020",
+            time: "10:00 AM-01:00 PM",
           },
           where: {
             location: "Chhetri Nivas, Raj Vihar Colony, Roorkee, Uttarakhand",
@@ -30,8 +34,8 @@ module.exports = {
         {
           occasion: "The Wedding",
           when: {
-            date: "Monday, 4th May, 2020",
-            time: "08:00 pm-11:00 pm",
+            date: "Sunday, 25th October, 2020",
+            time: "07:30 PM-10:00 PM",
           },
           where: {
             location: "Rangoli Garden, Delhi Rd, Roorkee, Uttarakhand",

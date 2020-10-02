@@ -20,7 +20,7 @@ const About = props => {
         <h2 className="cursive_text name">Aradhana <span>&amp;</span> Mukesh</h2>
           <span className="icon flaticon-rose-variant-outline-with-vines"></span>
           <span className="subheading">On</span>
-          <p className="time"><span>May | 4th | 2020</span></p>
+          <p className="time"><span style={{fontSize:"0.9em"}}>October | 25th | 2020</span></p>
       </div>
     </div>
   )

@@ -24,6 +24,9 @@ import Modal from "./modal"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
+  const [showInstructions, setShowInstructions] = useState(false)
+  const [showMessages, setShowMessages] = useState(false)
+
   const data = useStaticQuery(graphql`
     query Gallery {
       site {
@@ -38,14 +41,34 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+
   const [openModal, setOpenModal] = useState(false)
   
   const _messageOnClickHandler = useCallback(
     () => {
-      setOpenModal(state=>!state);
+      setOpenModal(state=>true);
+      setShowMessages(state => true)
+    },
+    [openModal],
+  )
+
+  const _onModalClose = useCallback(
+    () => {
+      setOpenModal(false)
+      setShowMessages(false)
+      setShowInstructions(false)
     },
     [],
   )
+
+
+  useEffect(() => {
+    setTimeout(() => {
+      setOpenModal(true)
+      setShowInstructions(true)
+    }, 2000);
+  }, [])
 
   return (
     <>
@@ -54,13 +77,27 @@ const Layout = ({ children }) => {
       </Helmet>
       {openModal && (
           <Modal>
+            <div className="main_modal_container">
+            <span className="close_button cursor_pointer" onClick={_onModalClose}>X</span>
             {
-              data.site.siteMetadata.messages.map( message => (
+              showMessages && data.site.siteMetadata.messages.map( message => (
                 <div key={message.text}>
                   <p className={`message ${message.langCode}_message`}>{message.text} &nbsp; { message.author? ` - ${message.author} `: `` }</p>
                 </div>
               ))
             }
+            {showInstructions && (
+              <>
+                <h4>INSTRUCTIONS</h4>
+                <ul>
+                  <li className="align_left">Don't consider this as an invite until the family has invited you personally.</li>
+                  <li className="align_left">Due to COVID-19, we are inviting very few people. So if you are invited, please come wearing mask, and try to maintain social distancing.</li>
+                  <li className="align_left">Stay home when you are sick.</li>
+                  <li className="align_left">Cover your cough or sneeze with a tissue, then throw the tissue in the trash.</li>
+                </ul>
+              </>
+            )}
+            </div>
           </Modal>
       )}
       <img src={MessageImage} className="message_icon" alt="Message Icon" onClick={_messageOnClickHandler}/>

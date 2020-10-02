@@ -743,3 +743,12 @@ main {
     bottom: 5rem;
   }
 }
+
+.main_modal_container {
+  .close_button {
+    right: 4px;
+    position: absolute;
+    top: -1px;
+    font-size: 1.4rem;
+  }
+}
