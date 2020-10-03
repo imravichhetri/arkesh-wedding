@@ -92,7 +92,7 @@ const Layout = ({ children }) => {
                 <ul>
                   <li className="align_left">Don't consider this as an invite until the family has invited you personally.</li>
                   <li className="align_left">Due to COVID-19, we are inviting very few people. So if you are invited, please come wearing mask, and try to maintain social distancing.</li>
-                  <li className="align_left">Stay home when you are sick.</li>
+                  <li className="align_left">Stay home if you are sick.</li>
                   <li className="align_left">Cover your cough or sneeze with a tissue, then throw the tissue in the trash.</li>
                 </ul>
               </>
