@@ -98,6 +98,7 @@ const Layout = ({ children }) => {
               </>
             )}
             </div>
+            <div className="enquiry_container">For any enquiry call +91-7017872344</div>
           </Modal>
       )}
       <img src={MessageImage} className="message_icon" alt="Message Icon" onClick={_messageOnClickHandler}/>

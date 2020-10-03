@@ -20,6 +20,13 @@
   text-align: center;
   font-family: 'Arya';
   overflow-y: scroll;
+
+  .enquiry_container {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    font-size: 0.75rem;
+  }
 }
 @media only screen and (max-width: 640px) {
   .modal_content_container {
