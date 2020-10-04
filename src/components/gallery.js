@@ -29,6 +29,8 @@ const Gallery = props => {
       }
     }
   `)
+  
+  
   return (
     <div className="container" id="gallery">
       {

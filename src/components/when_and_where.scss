@@ -2,6 +2,10 @@
   min-height: 80vh;
   .when_and_where_content_container{
     display: flex;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 
     &>div{
       flex:1

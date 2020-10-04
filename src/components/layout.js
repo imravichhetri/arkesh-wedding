@@ -88,12 +88,12 @@ const Layout = ({ children }) => {
             }
             {showInstructions && (
               <>
-                <h4>INSTRUCTIONS</h4>
+                <h4>PLEASE NOTE</h4>
                 <ul>
-                  {/* <li className="align_left">Don't consider this as an invite until the family has invited you personally.</li> */}
-                  <li className="align_left">Due to COVID-19, we are inviting very few people. So if you are invited, please come wearing mask, and try to maintain social distancing.</li>
-                  <li className="align_left">Stay home if you are sick.</li>
-                  <li className="align_left">Cover your cough or sneeze with a tissue, then throw the tissue in the trash.</li>
+                  <li className="align_left">Due to COVID-19, Authorities have put a limit of max 100 guests for a wedding.</li>
+                  <li className="align_left">We would have loved to invite you personally, but we are also bound by the rules imposed by the Govt.</li>
+                  <li className="align_left">Hence, those invited to the wedding will receive a call from Chhetri family personally.</li>
+                  <li className="align_left">Wearing a mask is compulsory for the attendees of the wedding.</li>
                 </ul>
               </>
             )}
